@@ -6,3 +6,4 @@
 /bin/
 MANIFEST.MF
 .idea
+/data-formatter/node_modules/*
