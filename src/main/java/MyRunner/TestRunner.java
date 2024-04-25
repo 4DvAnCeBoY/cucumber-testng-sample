@@ -15,7 +15,9 @@ import java.net.URL;
 @CucumberOptions(
 	features = "src/main/java/Features/todo.feature",
 	glue = {"stepDefinitions"},
-	plugin = "json:target/cucumber-reports/CucumberTestReport.json")
+	plugin = { 
+	"json:target/cucumber-reports/CucumberTestReport.json",
+	 "rerun:target/cucumber-reports/rerun.txt" } )
 
 public final class TestRunner extends AbstractTestNGCucumberTests {
 

@@ -63,17 +63,18 @@
 			<version>7.4.1</version>
 		</dependency>
 
-		<!-- <dependency>
-			<groupId>net.masterthought</groupId>
-			<artifactId>cucumber-reporting</artifactId>
-			<version>3.8.0</version>
-		</dependency> -->
-		<!-- <dependency>
-			<groupId>org.jetbrains</groupId>
-			<artifactId>annotations</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
-		</dependency> -->
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.16.1</version>
+		  </dependency>
 
 	</dependencies>
 	<build>
