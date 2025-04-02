@@ -15,8 +15,10 @@ import java.net.URL;
 @CucumberOptions(
 	features = "src/main/java/Features/todo.feature",
 	glue = {"stepDefinitions"},
-	plugin = "json:target/cucumber-reports/CucumberTestReport.json")
+	plugin = {"json:target/cucumber-reports/CucumberTestReport.json","MyRunner.CustomTestNGCucumberListener"})
 
+
+@Listeners(CustomTestNGCucumberListener.class)
 public final class TestRunner extends AbstractTestNGCucumberTests {
 
 	private TestNGCucumberRunner testNGCucumberRunner;
